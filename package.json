@@ -1,0 +1,22 @@
+{
+  "name": "read-me-gen-4-ur-health",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cooperflynn/read-me-gen-4-ur-health.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cooperflynn/read-me-gen-4-ur-health/issues"
+  },
+  "homepage": "https://github.com/cooperflynn/read-me-gen-4-ur-health#readme",
+  "dependencies": {
+    "inquirer": "^8.1.1"
+  }
+}
