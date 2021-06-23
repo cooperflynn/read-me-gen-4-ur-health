@@ -1,4 +1,6 @@
 const inquirer = require('inquirer');
+const writeFile = require('./utils/generate-readme.js');
+const generateMarkdown = require('./src/markdown-template.js');
 
 const prompt = () => {
     return inquirer.prompt([
@@ -110,3 +112,18 @@ const prompt = () => {
         }
     ])
 };
+
+prompt()
+    .then(projectData => {
+        return generateMarkdown(projectData);
+    })
+    .then(markDown => {
+        return writeFile(markDown)
+    })
+    .then(writeFileResponse => {
+        console.log(writeFileResponse);
+    })
+    .catch(err => {
+        console.log(err);
+    });
+    
