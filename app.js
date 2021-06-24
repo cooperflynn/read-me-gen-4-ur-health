@@ -86,7 +86,7 @@ const prompt = () => {
             type: 'list',
             name: 'license',
             message: 'Select the license you are using for your project:',
-            choices: ["MIT", "GPL", "Apache 2.0", "BSD 3-Clause", "BSD 2-Clause", "Other"],
+            choices: ["MIT", "GNU GPL v3", "Apache 2.0", "BSD 3-Clause", "BSD 2-Clause", "Other"],
             validate: licenseChoice => {
                 if (licenseChoice) {
                     return true
