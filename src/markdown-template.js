@@ -50,6 +50,149 @@ return '';
     } 
 };
 
+function renderLicenseTOC(license) {
+    if (!license) {
+        return '';
+    } else {
+        return `
+        * [License](#license)
+        `
+    }
+};
+
+function renderLicenseNotice(license) {
+    if (!license) {
+        return '';
+    } else {
+        return `
+        &copy; ${new Date().getFullYear()}
+  
+  Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+
+  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.   
+        `
+    }
+};
+
+function renderLicenseSection(license) {
+    if (!license) {
+        return '';
+    } else {
+        return `
+        ##License
+        ${license}
+        ${renderLicenseLink(license)}
+        ${renderLicenseNotice(license)}
+        `
+    }
+};
+
+function renderDescriptionTOC(description) {
+    if (!description) {
+        return '';
+    } else {
+        return `
+        * [Description](#description)
+        `
+    }
+};
+
+function renderDescriptionSection(description) {
+    if (!description) {
+        return '';
+    } else {
+        return `
+        ##Description
+        ${description}
+        `
+    }
+};
+
+function renderInstallationTOC(installation) {
+    if (!installation) {
+        return '';
+    } else {
+        return `
+        * [Installation](#installation)
+        `
+    }
+};
+
+function renderInstallationSection(installation) {
+    if (!installation) {
+        return '';
+    } else {
+        return `
+        ##Installation
+        ${installation}
+        `
+    }
+};
+
+function renderUsageTOC(usage) {
+    if (!usage) {
+        return '';
+    } else {
+        return `
+        * [Usage](#usage)
+        `
+    }
+};
+
+function renderUsageSection(usage) {
+    if (!usage) {
+        return '';
+    } else {
+        return `
+        ##Usage
+        ${usage}
+        `
+    }
+};
+
+function renderContributeTOC(contribute) {
+    if (!contribute) {
+        return '';
+    } else {
+        return `
+        * [Contribute](#contribute)
+        `
+    }
+};
+
+function renderContributeSection(contribute) {
+    if (!contribute) {
+        return '';
+    } else {
+        return `
+        ##Contribute
+        ${contribute}
+        `
+    }
+};
+
+function renderTestTOC(test) {
+    if (!test) {
+        return '';
+    } else {
+        return `
+        * [Test](#test)
+        `
+    }
+};
+
+function renderTestSection(test) {
+    if (!test) {
+        return '';
+    } else {
+        return `
+        ##Test
+        ${test}
+        `
+    }
+};
+
+
 function generateMarkdown(data) {
 return `
 # ${data.title} 
@@ -57,32 +200,29 @@ return `
 ${renderLicenseBadge(data.license)}
     
 ## Table of contents
-* [Project description](#project-description)
-* [Installation instructions](#installation-instructions)
-* [Usage](#usage)
-* [License](#license)
-* [Contributing guidelines](#contributing-guidelines)
+${renderDescriptionTOC(data.description)}
+${renderInstallationTOC(data.installation)}
+${renderUsageTOC(data.usage)}
+${renderLicenseTOC(data.license)}
+${renderContributeTOC(data.contribute)}
+${renderTestTOC(data.test)}
 * [Contact](#contact)
     
-##Project description
-${data.description}
+${renderDescriptionSection(data.description)}
     
-##Installation instructions
-${data.installation}
+${renderInstallationSection(data.installation)}
 
-##Usage
-${data.usage}
+${renderUsageSection(data.usage)}
 
-##License
-${data.license} 
-${renderLicenseLink(data.license)}
+${renderLicenseSection(data.license)}
 
-##Contributing guidelines
-${data.contribute}
+${renderContributeSection(data.contribute)}
+
+${renderTestSection(data.test)}
 
 ##Contact  
-${data.github}
-${data.email}
+* Github: [www.github.com/${data.github}](www.github.com/${data.github})
+* Email: ${data.email}
 `;   
 };
 

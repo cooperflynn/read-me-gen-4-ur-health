@@ -1,9 +1,7 @@
 
-# lksjdfa 
+# COol dodde 
 
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
+undefined
     
 ## Table of contents
 * [Project description](#project-description)
@@ -14,20 +12,21 @@
 * [Contact](#contact)
     
 ##Project description
-laskdjf
+dasfkja
     
 ##Installation instructions
-lkadjsf
+slkdjf
 
 ##Usage
-laksdjf
+lkjasdf
 
 ##License
-MIT
+BSD 3-Clause 
+undefined
 
 ##Contributing guidelines
-klsadjf
+adsfsdf
 
 ##Contact  
-lasdjfasd
-a;sdfjsadf
+* [My github profile](www.github.com/cooperflynn)
+* Email me here: cooperflynn@utexas.edu
