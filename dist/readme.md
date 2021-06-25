@@ -1,32 +1,61 @@
 
-# COol dodde 
+# oasdfipasdf 
 
-undefined
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
     
 ## Table of contents
-* [Project description](#project-description)
-* [Installation instructions](#installation-instructions)
+
+* [Description](#description)
+
+
+
 * [Usage](#usage)
+
+
 * [License](#license)
-* [Contributing guidelines](#contributing-guidelines)
-* [Contact](#contact)
+
+
+* [Contribute](#contribute)
+
+
+* [Questions](#questions)
     
-##Project description
-dasfkja
+
+##Description
+kasdfj;asdf
+
     
-##Installation instructions
-slkdjf
+
+
 
 ##Usage
-lkjasdf
+ajsld;fasd
+
+
 
 ##License
-BSD 3-Clause 
-undefined
+MIT
 
-##Contributing guidelines
-adsfsdf
+(https://opensource.org/licenses/MIT)
 
-##Contact  
-* [My github profile](www.github.com/cooperflynn)
-* Email me here: cooperflynn@utexas.edu
+
+&copy; 2021
+  
+Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.   
+        
+
+
+
+##Contribute
+lkasdjf;asdf
+
+
+
+
+##Questions  
+* Github: [www.github.com/coasdfp](www.github.com/coasdfp)
+* Email: sdpafiasdf
