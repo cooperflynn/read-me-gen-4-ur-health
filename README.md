@@ -36,7 +36,7 @@ This is a project read-me generator. Simply input data about your project into t
 
 
 ## Video
-Placeholder
+https://drive.google.com/file/d/19y09aCj4WSDJPwlD8fg6kQVu_jeOww7E/view?usp=sharing
 
 
 
