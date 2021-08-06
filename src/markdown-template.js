@@ -54,7 +54,7 @@ function renderLicenseTOC(license) {
     if (!license) {
         return '';
     } else {
-        return `
+return `
 * [License](#license)
 `
     }
@@ -79,7 +79,7 @@ function renderLicenseSection(license) {
         return '';
     } else {
 return `
-##License
+## License
 ${license}
 ${renderLicenseLink(license)}
 ${renderLicenseNotice(license)}
@@ -102,8 +102,50 @@ function renderDescriptionSection(description) {
         return '';
     } else {
 return `
-##Description
+## Description
 ${description}
+`
+    }
+};
+
+function renderVideoTOC(video) {
+    if (!video) {
+        return '';
+    } else {
+return `
+* [Video](#video)
+`
+    }
+};
+
+function renderVideoSection(video) {
+    if (!video) {
+        return '';
+    } else {
+return `
+## Video
+${video}
+`
+    }
+};
+
+function renderLearnedTOC(learned) {
+    if (!learned) {
+        return '';
+    } else {
+return `
+* [What I Learned](#what-i-learned)
+`
+    }
+};
+
+function renderLearnedSection(learned) {
+    if (!learned) {
+        return '';
+    } else {
+return `
+## What I Learned
+${learned}
 `
     }
 };
@@ -123,7 +165,7 @@ function renderInstallationSection(installation) {
         return '';
     } else {
         return `
-##Installation
+## Installation
 ${installation}
 `
     }
@@ -144,7 +186,7 @@ function renderUsageSection(usage) {
         return '';
     } else {
 return `
-##Usage
+## Usage
 ${usage}
 `
     }
@@ -165,7 +207,7 @@ function renderContributeSection(contribute) {
         return '';
     } else {
 return `
-##Contribute
+## Contribute
 ${contribute}
 `
     }
@@ -186,7 +228,7 @@ function renderTestSection(test) {
         return '';
     } else {
 return `
-##Test
+## Test
 ${test}
 `
     }
@@ -195,7 +237,7 @@ ${test}
 
 function generateMarkdown(data) {
 
-const { github, email, title, description, installation, usage, license, contribute, test } = data;
+const { github, email, title, description, video, learned, installation, usage, license, contribute, test } = data;
 
 return `
 # ${title} 
@@ -204,6 +246,8 @@ ${renderLicenseBadge(license)}
     
 ## Table of contents
 ${renderDescriptionTOC(description)}
+${renderVideoTOC(video)}
+${renderLearnedTOC(learned)}
 ${renderInstallationTOC(installation)}
 ${renderUsageTOC(usage)}
 ${renderLicenseTOC(license)}
@@ -212,6 +256,10 @@ ${renderTestTOC(test)}
 * [Questions](#questions)
     
 ${renderDescriptionSection(description)}
+
+${renderVideoSection(video)}
+
+${renderLearnedSection(learned)}
     
 ${renderInstallationSection(installation)}
 

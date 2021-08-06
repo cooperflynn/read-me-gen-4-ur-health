@@ -63,6 +63,42 @@ const prompt = () => {
         },
         {
             type: 'confirm',
+            name: 'confirmVideo',
+            message: 'Would you like to provide a link to a video of your project?',
+            default: true
+        },
+        {
+            type: 'input',
+            name: 'video',
+            message: 'Provide a video link.',
+            when: ({confirmVideo}) => {
+                if (confirmVideo) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }  
+        },
+        {
+            type: 'confirm',
+            name: 'confirmLearned',
+            message: 'Would you like to include what you learned?',
+            default: true
+        },
+        {
+            type: 'input',
+            name: 'learned',
+            message: 'Please include what you learned.',
+            when: ({confirmLearned}) => {
+                if (confirmLearned) {
+                    return true
+                } else {
+                    return false
+                }
+            }
+        },
+        {
+            type: 'confirm',
             name: 'confirmInstallation',
             message: 'Would you like to provide installation instructions?',
             default: true
