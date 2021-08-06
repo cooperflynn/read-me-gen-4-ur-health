@@ -1,4 +1,5 @@
-# Readme Generator 
+
+# jladf 
 
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -24,34 +25,34 @@
 * [License](#license)
 
 
-* [Contribute](#contribute)
 
+* [Test](#test)
 
 * [Questions](#questions)
     
 
 ## Description
-This is a project read-me generator. Simply input data about your project into the command line, when prompted, and a clean and organized readme file will be generated.
+al;sdfj
 
 
 
 ## Video
-Placeholder
+;klsadjfds
 
 
 
 ## What I Learned
-This project was involved node.js, inquirer, and other built-in packages to gather data and generate files. I also  learned how to build template literals.
+lk;ajsdf
 
     
 
 ## Installation
-Clone this repo, run "npm install" from the terminal, run "node app.js" from the terminal to launch the app.
+lajdsf
 
 
 
 ## Usage
-This app is meant to be used by anyone who needs a quick and easy way to generate a readme file for their github project.
+aljsdfasdf
 
 
 
@@ -70,12 +71,12 @@ THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH RE
 
 
 
-## Contribute
-Developers can create a fork, add changes to their forked branch, then submit a pull request for review and merging with the production branch.
 
 
+## Test
+la;skdjf
 
 
 ##Questions  
-* Github: [www.github.com/cooperflynn](www.github.com/cooperflynn)
-* Email: cooperflynn91@gmail.com
+* Github: [www.github.com/lajkdsf](www.github.com/lajkdsf)
+* Email: ;ladfjs
