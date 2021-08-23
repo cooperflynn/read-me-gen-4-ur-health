@@ -63,6 +63,42 @@ const prompt = () => {
         },
         {
             type: 'confirm',
+            name: 'confirmLaunched',
+            message: 'Would you like to provide a link to your launched application?',
+            default: true
+        },
+        {
+            type: 'input',
+            name: 'launched',
+            message: 'Provide link to your launched application.',
+            when: ({confirmLaunched}) => {
+                if (confirmLaunched) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }  
+        },
+        {
+            type: 'confirm',
+            name: 'confirmScreenShot',
+            message: 'Would you like to provide the relative path to a screenshot of your project?',
+            default: true
+        },
+        {
+            type: 'input',
+            name: 'screenShot',
+            message: 'Provide the relative path to your screenshot.',
+            when: ({confirmScreenShot}) => {
+                if (confirmScreenShot) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }  
+        },
+        {
+            type: 'confirm',
             name: 'confirmVideo',
             message: 'Would you like to provide a link to a video of your project?',
             default: true

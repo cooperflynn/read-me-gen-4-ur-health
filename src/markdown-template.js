@@ -108,6 +108,34 @@ ${description}
     }
 };
 
+function renderLaunchedTOC(launched) {
+    if (!launched) {
+        return '';
+    } else {
+return `
+* [Launched Application](#launched-application)
+`
+    }
+};
+
+function renderLaunchedSection(launched, screenShot) {
+    if (!launched) {
+        return '';
+    } else if (launched && screenShot) {
+return `
+## Launched Application
+${launched}  
+
+![screen shot of application](${screenShot})
+`
+    } else if (launched && !screenShot) {
+return `
+## Launched Application
+${launched}
+`   
+    }
+};
+
 function renderVideoTOC(video) {
     if (!video) {
         return '';
@@ -237,7 +265,7 @@ ${test}
 
 function generateMarkdown(data) {
 
-const { github, email, title, description, video, learned, installation, usage, license, contribute, test } = data;
+const { github, email, title, description, launched, screenShot, video, learned, installation, usage, license, contribute, test } = data;
 
 return `
 # ${title} 
@@ -246,6 +274,7 @@ ${renderLicenseBadge(license)}
     
 ## Table of contents
 ${renderDescriptionTOC(description)}
+${renderLaunchedTOC(launched)}
 ${renderVideoTOC(video)}
 ${renderLearnedTOC(learned)}
 ${renderInstallationTOC(installation)}
@@ -256,6 +285,8 @@ ${renderTestTOC(test)}
 * [Questions](#questions)
     
 ${renderDescriptionSection(description)}
+
+${renderLaunchedSection(launched, screenShot)}
 
 ${renderVideoSection(video)}
 
@@ -271,7 +302,7 @@ ${renderContributeSection(contribute)}
 
 ${renderTestSection(test)}
 
-##Questions  
+## Questions  
 * Github: [www.github.com/${github}](www.github.com/${github})
 * Email: ${email}
 `;   
